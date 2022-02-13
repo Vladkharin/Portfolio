@@ -1,0 +1,42 @@
+.advantages{
+    min-height: 472px;
+    padding: 68px 0 78px 0;
+    background: url('../icons/bg22.svg') center (center/cover) no-repeat;
+    &__wrapper{
+        margin-top: 65px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 247px;
+    }
+    &__subtitle{
+        margin-top: 38px;
+        color: #0d0d0d;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__descr{
+        margin-top: 25px;
+        color: #0d0d0d;
+        font-size: 14px;
+        font-weight: 300;
+        text-align: center;
+        a{
+            color: $main-color;
+            text-decoration: underline;
+        }
+    }
+    &__icon{
+        &_animated{
+            animation: heartbeat 1.5s ease infinite ;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+    }
+}
